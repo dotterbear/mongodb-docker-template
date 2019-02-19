@@ -17,5 +17,5 @@ db.createIndex(
 
 db.createIndex(
     { "url": 1 },
-	{ unique: true, "name": "unique_url_1" }
+    { unique: true, "name": "unique_url_1" }
 );
