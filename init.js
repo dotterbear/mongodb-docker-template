@@ -9,3 +9,13 @@ db.createUser({
         }
     ]
   });
+
+db.createIndex(
+    { "title": "text", "details": "text" },
+    { "name": "text_title_details_1 }
+);
+
+db.createIndex(
+    { "url": 1 },
+	{ unique: true, "name": "unique_url_1" }
+);
