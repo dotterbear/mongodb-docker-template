@@ -12,7 +12,7 @@ db.createUser({
 
 db.createIndex(
     { "title": "text", "details": "text" },
-    { "name": "text_title_details_1 }
+    { "name": "text_title_details_1" }
 );
 
 db.createIndex(
