@@ -19,3 +19,7 @@ db.JobAd.createIndex(
     { "url": 1 },
     { unique: true, "name": "unique_url_1" }
 );
+
+db.JobAd.createIndex(
+    { "companyName": 1 }
+);
