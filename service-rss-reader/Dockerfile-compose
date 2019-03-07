@@ -1,0 +1,7 @@
+From mongo:4.0.6
+ENV MONGO_INITDB_ROOT_USERNAME service-rss-reader
+ENV MONGO_INITDB_ROOT_PASSWORD pass
+ENV MONGO_INITDB_DATABASE service-rss-reader-compose
+ADD init-compose.js /docker-entrypoint-initdb.d/
+EXPOSE 27017
+VOLUME ../../local/db/data/service-rss-reader:/data/db
