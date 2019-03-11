@@ -1,4 +1,4 @@
-db = db.getSiblingDB('service-rss-reader-');
+db = db.getSiblingDB('service-rss-reader-dev');
 db.createUser({
     user: "service-rss-reader",
     pwd: "pass",
