@@ -23,3 +23,11 @@ db.JobAd.createIndex(
 db.JobAd.createIndex(
     { "companyName": 1 }
 );
+
+db.JobAd.createIndex(
+    { "tags": 1 }    
+);
+
+db.JobAd.createIndex(
+    { "title": 1 }
+);
