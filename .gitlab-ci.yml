@@ -14,7 +14,7 @@ build_service_jobad_reader_image:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker info
   script:
-    - docker build -t $CI_REGISTRY_IMAGE ./service-jobad-reader
+    - docker build -t $CI_REGISTRY_IMAGE/service/service-jobad-reader ./service-jobad-reader
     - docker push $CI_REGISTRY_IMAGE/service/service-jobad-reader:latest
 
 build_service_rss_reader_image:
@@ -29,5 +29,5 @@ build_service_rss_reader_image:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker info
   script:
-    - docker build -t $CI_REGISTRY_IMAGE ./service-rss-reader
+    - docker build -t $CI_REGISTRY_IMAGE/service/service-rss-reader ./service-rss-reader
     - docker push $CI_REGISTRY_IMAGE/service/service-rss-reader:latest
