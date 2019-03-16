@@ -4,4 +4,4 @@ From mongo:4.0.6
 #ENV MONGO_INITDB_DATABASE admin
 # ADD init.js /docker-entrypoint-initdb.d/
 EXPOSE 27017
-VOLUME ./local/db/data:/data/db
+VOLUME ./local/db/service-rss-reader/data:/data/db

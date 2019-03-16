@@ -4,4 +4,4 @@ ENV MONGO_INITDB_ROOT_PASSWORD root
 ENV MONGO_INITDB_DATABASE admin
 ADD init.js /docker-entrypoint-initdb.d/
 EXPOSE 27017
-VOLUME ./local/db/data:/data/db
+VOLUME ./local/db/service-jobad-reader/data:/data/db
