@@ -14,6 +14,6 @@ build_dynamodb_admin_image:
     - docker info
   script:
     - docker build -t $CI_REGISTRY_IMAGE ./service-jobad-reader
-    - docker push $CI_REGISTRY_IMAGE service-jobad-reader
+    - docker push $CI_REGISTRY_IMAGE/service-jobad-reader
     - docker build -t $CI_REGISTRY_IMAGE ./service-rss-reader
-    - docker push $CI_REGISTRY_IMAGE service-rss-reader
+    - docker push $CI_REGISTRY_IMAGE/service-rss-reader
