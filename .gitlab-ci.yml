@@ -15,7 +15,7 @@ build_service_jobad_reader_image:
     - docker info
   script:
     - docker build -t $CI_REGISTRY_IMAGE ./service-jobad-reader
-    - docker push $CI_REGISTRY_IMAGE/service-jobad-reader:latest
+    - docker push $CI_REGISTRY_IMAGE/service/service-jobad-reader:latest
 
 build_service_rss_reader_image:
   stage: build_service_rss_reader_image
@@ -30,4 +30,4 @@ build_service_rss_reader_image:
     - docker info
   script:
     - docker build -t $CI_REGISTRY_IMAGE ./service-rss-reader
-    - docker push $CI_REGISTRY_IMAGE/service-rss-reader:latest
+    - docker push $CI_REGISTRY_IMAGE/service/service-rss-reader:latest
